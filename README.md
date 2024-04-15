@@ -49,7 +49,7 @@ Windowsでやれ!!
 ```console
 $ sudo apt update
 $ sudo apt upgrade
-$ sudo apt vim
+$ sudo apt install vim
 ```
 
 テキストエディタはお好みのものを
@@ -66,7 +66,7 @@ $ ./dotnet-install.sh  --channel 8.0
 ```
 2024-04-13時点、--channel 8.0を付けなくても最新は8.0がインストールされる  
 
-~/.netにPATHを通す
+~/.dotnetにPATHを通す
 ```console
 $ cd
 $ cp -p .bashrc dot.bashrc
@@ -147,7 +147,7 @@ $ sudo apt install ./packages-microsoft-prod.deb
 $ sudo apt update
 $ sudo apt install msopenjdk-17
 ```
-openjdk-21もあるが、結論からいえばdotnetのビルドでopenjdk17を求められるので
+(ms)openjdk-21もあるが、結論からいえばdotnetのビルドでopenjdk17を求められるので
 
 ### 4-3-2. Android SDKのインストール
 
@@ -167,7 +167,7 @@ $ mkdir -p $HOME/Android/SDK
 platformは34を入れる(これもdotnet build時に求められるパッケージバージョンがそうなので)
 ```console
 $ cd cmdline-tool/bin
-$ ./sdkmanager --sdk_root=$HOME/Android/SDK/ --install "cmdline-tools;latest"
+$ ./sdkmanager --sdk_root=$HOME/Android/SDK/ "cmdline-tools;latest"
 $ ./sdkmanager --sdk_root=$HOME/Android/SDK/ "platform-tools" "platforms;android-34"
 $ ./sdkmanager --sdk_root=$HOME/Android/SDK/ "build-tools;34.0.0"
 ```
