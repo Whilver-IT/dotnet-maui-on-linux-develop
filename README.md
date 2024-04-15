@@ -134,7 +134,7 @@ error XA5300: To use a custom SDK path for a command line build, set the 'Androi
 
 ### 4-3. Android SDKのインストール
 
-### 4-3-1. OpenJDKのインストール
+#### 4-3-1. OpenJDKのインストール
 
 パッケージマネージャからもOpenJDKを入れられるが、  
 [OpenJDK の Microsoft Build をインストールする](https://learn.microsoft.com/ja-jp/java/openjdk/install#install-on-ubuntu)  
@@ -149,7 +149,7 @@ $ sudo apt install msopenjdk-17
 ```
 (ms)openjdk-21もあるが、結論からいえばdotnetのビルドでopenjdk17を求められるので
 
-### 4-3-2. Android SDKのインストール
+#### 4-3-2. Android SDKのインストール
 
 Android SDKをコマンドラインツールで入れていく  
 [Android Developers](https://developer.android.com/studio?hl=ja)  
