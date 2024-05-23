@@ -103,7 +103,7 @@ $ dotnet build
 ```
 
 https://packages.microsoft.com/config/rhel/9/packages-microsoft-prod.rpm  
-とか
+とか  
 https://packages.microsoft.com/config/rocky/9/packages-microsoft-prod.rpm  
 とかでも良さそうに思えるが、msopenjdkパッケージは含まれないので、CentOS 7用のものを使用する
 
@@ -145,5 +145,5 @@ Time Elapsed 00:04:05.41
 
 ```console
 $ cd $HOME
-$ rm -rf cmdline* packages-microsoft-prod.deb
+$ rm -rf cmdline* packages-microsoft-prod.rpm
 ```
